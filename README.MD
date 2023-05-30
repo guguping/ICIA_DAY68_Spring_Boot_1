@@ -36,6 +36,9 @@ spring:
     hibernate:
       ddl-auto: create
 ```
+#### DDL-AUTO:CREATE 는 매번 실행할때 마다 테이블을 새로 만든다 (내용이 저장되지 않는다)
+#### create 는 주로 테스트할때 사용된다
+#### ddl-auto: update 를 사용하면 저장도 가능하고 테이블, 컬럼 생성도 자유롭게 가능하다 
 
 ### db query log 관련 설정
 

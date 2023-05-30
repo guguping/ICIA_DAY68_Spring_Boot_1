@@ -1,8 +1,13 @@
 package com.example.demo2.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "album_table")
 public class AlbumEntity {
     @Id
@@ -17,5 +22,7 @@ public class AlbumEntity {
     @Column(length = 50,nullable = false)
     private String songArtist;
     @Column(length = 500)
-    private String songIyrics;
+    private String songLyrics;
+    @Column
+    private String songGenre;
 }
